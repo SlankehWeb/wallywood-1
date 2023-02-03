@@ -1,8 +1,17 @@
+import { ContentWrapper } from "../../Components/App/ContentWrapper/ContentWrapper";
+import { SlideWrapper } from "../../Components/App/SlideWrapper/SlideWrapper";
+import DataList from "../../Components/App/Data/Data";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <SlideWrapper />
+      <ContentWrapper title="Home">
+        <section>
+          <DataList />
+        </section>
+      </ContentWrapper>
+    </>
   );
 };
 

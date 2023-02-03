@@ -1,7 +1,18 @@
+import { ContentWrapper } from "../../Components/App/ContentWrapper/ContentWrapper";
+import DataList from "../../Components/App/Data/Data";
+
+
 const Plakater = () => {
   return (
     <div>
-      <h1>Plakater</h1>
+      <ContentWrapper
+        title="Plakater"
+        description="Se vores udvalg af plakater"
+      >
+        <section>
+          <DataList />
+        </section>
+      </ContentWrapper>
     </div>
   );
 };

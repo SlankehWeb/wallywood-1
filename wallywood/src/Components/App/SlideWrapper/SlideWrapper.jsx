@@ -1,11 +1,9 @@
-import { SlideWrapperStyle } from "./SlideWrapperStyle.js";
+import { SlideWrapperStyle } from './SlideWrapperStyle';
 
-const SlideWrapper = () => {
+export default function SlideWrapper() {
   return (
-    <SlideWrapperStyle>
-
-    </SlideWrapperStyle>
-  );
-};
-
-export { SlideWrapper };
+	<SlideWrapperStyle>
+		<img src={require('../../../Assets/images/curtain.jpg')} alt="Wallywood" />
+	</SlideWrapperStyle>
+  )
+}
